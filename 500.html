@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Palvelinvirhe</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/png" href="/Laurea_favicon.png">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .error-message {
+            font-size: 24px;
+            color: #555;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Koti</a>
+        <a href="/about">Tietoja</a>
+        <a href="/contact">Yhteystiedot</a>
+        <a href="/api/time">API Aika</a>
+    </nav>
+
+    <div class="container error-container">
+        <div class="error-code">500</div>
+        <h1 class="error-message">Sisäinen palvelinvirhe</h1>
+
+        <div class="card">
+            <p>Jotain meni pieleen palvelimellamme. Korjaamme ongelman mahdollisimman pian!</p>
+            <p>Tämä 500 virhe käsitellään <strong>Expressin virheen middleware avulla</strong> avulla.</p>
+
+            <div class="btn-group">
+                <a href="/" class="btn">← Takaisin koti sivulle</a>
+                <a href="/contact" class="btn btn-secondary">Raportoi ongelmasta</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Workshop 03 - Express.js | ©MartinSmerling</p>
+    </footer>
+</body>
+
+</html>
